@@ -3,50 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>あなたのお名前 | インディーゲーム作家</title>
+  <title>あなたのお名前</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>あなたのお名前</h1>
-    <p>インディーゲーム作家</p>
-  </header>
+  <div class="container">
 
-  <nav>
-    <a href="#games">ゲーム一覧</a>
-    <a href="#profile">プロフィール</a>
-    <a href="#contact">連絡先</a>
-  </nav>
-
-  <section id="games">
-    <h2>ゲーム</h2>
-
-    <div class="game">
-      <img src="images/game1.jpg" alt="ゲーム1のサムネイル">
-      <h3>ゲームタイトル1</h3>
-      <p>ゲームの簡単な説明文。ジャンルや操作感、どんな体験かなどを簡潔に。</p>
+    <!-- SNSリンク -->
+    <div class="sns">
+      <a href="https://twitter.com/yourname" target="_blank">
+        <img src="images/icon_twitter.png" alt="Twitter">
+      </a>
+      <a href="https://yourname.booth.pm" target="_blank">
+        <img src="images/icon_booth.png" alt="BOOTH">
+      </a>
+      <!-- 必要に応じて追加 -->
     </div>
 
-    <div class="game">
-      <img src="images/game2.jpg" alt="ゲーム2のサムネイル">
-      <h3>ゲームタイトル2</h3>
-      <p>ゲームの簡単な説明文。遊べるリンクや詳細ページへのリンクも後ほど追加可能。</p>
+    <!-- ゲーム一覧 -->
+    <div class="works">
+      <div class="work">
+        <img src="images/game1_thumb.jpg" alt="Game 1">
+        <div class="platforms">
+          <a href="https://store.steampowered.com/app/xxxxx" target="_blank">
+            <img src="images/game1_steam.png" alt="Steam">
+          </a>
+          <a href="https://yourname.itch.io/game1" target="_blank">
+            <img src="images/game1_itch.png" alt="itch.io">
+          </a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/game2_thumb.jpg" alt="Game 2">
+        <div class="platforms">
+          <a href="https://store.steampowered.com/app/yyyyy" target="_blank">
+            <img src="images/game2_steam.png" alt="Steam">
+          </a>
+        </div>
+      </div>
+
+      <!-- 必要なだけ .work を追加 -->
     </div>
-  </section>
 
-  <section id="profile">
-    <h2>プロフィール</h2>
-    <p>あなたがどういう活動をしているか、ゲーム作りのスタンスや履歴などを自由に書いてください。</p>
-  </section>
-
-  <section id="contact">
-    <h2>連絡先</h2>
-    <p>お仕事のご依頼などは以下までお願いします。</p>
-    <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 あなたのお名前</p>
-  </footer>
+  </div>
 </body>
 </html>
